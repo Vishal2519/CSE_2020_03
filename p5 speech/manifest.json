@@ -1,0 +1,30 @@
+{
+    "manifest_version":2,
+    "description":"Text to speech",
+    "version":"1.0",
+    "name":"Text to speech",
+    "icons":{
+        "128":"icon128.png",
+        "48":"icon48.png",
+        "16":"icon16.png"
+    },
+    "browser_action":{
+        "default_icon":"icon16.png",
+        "default_popup":"popup.html"
+    },
+    "permissions":[
+        "activeTab",
+        "tabs",
+        "tts",
+        "storage",
+        "ttsEngine",
+        "contextMenus",
+        "https://support.lsdsoftware.com/"
+        ],
+    "content_scripts":[{
+        "matches":["https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.5/p5.min.js",
+            "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.5/addons/p5.dom.js"],
+        "js":["popup.js","p5.speech.js"]
+    }]
+
+}

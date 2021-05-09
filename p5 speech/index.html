@@ -1,0 +1,34 @@
+<html>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.5/p5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.5/addons/p5.dom.js"></script>
+	<script src="../lib/p5.speech.js"></script>
+	<script>
+
+        function say(){
+	var myVoice = new p5.Speech(); // new P5.Speech object
+            myVoice.speak("hello");
+        }
+
+        /*function setUp(){
+    noCanvas();
+    let lang= navigator.language || 'en-US';
+    let speechRec=new p5.SpeechRec(lang.gotSpeech);
+
+    speechRec.start();
+
+    function gotSpeech(){
+        console.log(speechRec);
+    }
+
+}*/
+
+</script>
+</head>
+<body>
+    <button onclick=say()> 
+        click
+
+    </button>
+</body>
+</html>
