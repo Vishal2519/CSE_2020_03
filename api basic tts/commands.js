@@ -1,4 +1,4 @@
-var artyom = new window.Artyom();
+//var artyom = new Artyom();
 /*
 artyom.addCommands([
     {
@@ -19,19 +19,6 @@ artyom.addCommands([
 document.getElementById("commands").addEventListener("click",listen);
 
 function listen(){
-    /*artyom.on(['testing','Another test']).then((i) => {
-        switch (i) {
-            case 0:
-                artyom.say("first command works");
-            break;
-            case 1:
-                artyom.say("This other command works as well");
-            break;            
-        }
-    });*/
+    Jarvis.say("how can I help you"); 
 
-    artyom.on(['test command']).then(() =>{
-        artyom.say("command worked successfully");
-        console.log("command worked successfully");
-    });
 }
