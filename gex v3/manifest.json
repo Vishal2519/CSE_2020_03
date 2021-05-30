@@ -1,0 +1,43 @@
+{
+    "manifest_version": 2,
+    "name": "Gex v0.3",
+    "version": "2",
+    "icons": {
+        "16": "icon_128.png",
+        "48": "icon_128.png",
+        "128": "icon_128.png"
+    },
+    "devtools_page": "index.html",
+    "permissions": [
+        "background",
+        "identity",
+        "notifications",
+        "storage",
+        "alarms",
+        "https://www.googleapis.com/*",
+        "https://*.googleusercontent.com/*",
+        "tts",
+        "ttsEngine"
+    ],
+    "background": {
+        "scripts": [
+            "background.js","textTS.js","index.html","styles.css"
+        ],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_icon": {
+            "19": "icon_128.png",
+            "38": "icon_128.png"
+        },
+        "default_title": "Click to Sign in with Google"
+    },
+    "oauth2": {
+        "client_id": "702316745646-jkef39ome26s7kf481p0cg0idfla3ofc.apps.googleusercontent.com",
+        "scopes": [
+            "profile",
+            "https://www.googleapis.com/auth/gmail.readonly"
+        ]
+    },
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnqFjzbt+LtejD1JhOyMUbejOHdLoemzryr+ZQHK2CEKuI0yVVYToFs7eNusH/hfxhnyF27G4BU8apsTc695EpVQGD0ANKdt6BjubRnA/4VcdkmfdD3D9nsdCc+fHkINRU5e05grfs/BETWW/JAUULduaNWGfhT7nLRqL6uc/mo45REM1PGuKnSB/f3LX97K0vX/7loX21ih8Ep7aQpcWIPfCwVsb80E4am4CJ6SlBtGD2wxdEW7VInXWMAHMJ1khsi6hJwGx9ZjbnC7UVxjhDWtERK28ylKr8mmuwYUPOhCHfy/uSW/0T9VhiKUQvUokpe1WveeON3kI5nGcM+nVKwIDAQAB"
+}
