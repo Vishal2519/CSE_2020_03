@@ -1,0 +1,94 @@
+* {box-sizing: border-box}
+body nav {
+  position: sticky;
+  top: 0;
+}
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding: 20px;
+  background:#CAF7DB;
+}
+li {
+  list-style: none;
+  margin-right: 650px;
+  font-size: 70px;
+  font-weight: bold;
+}
+li a {
+  text-decoration: none;
+  color: #1ac;
+  text-align: center;
+} 
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.tab {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#44aad4;
+  overflow-x: hidden;
+  padding-top: 55px;
+}
+
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.tab button {
+  padding: 70px 20px 6px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  color:white;
+
+}
+
+.tab button:hover {
+font-style: italic ;
+text-decoration: underline;
+}
+.tab button.active {
+  background-color: blue;
+}
+
+.tabcontent {
+
+  padding-bottom:100px;
+text-align: center;
+  border-left: none; 
+}
+.gmailInbox{
+  font-size: 45px;
+  font-style: bold;
+  padding: 40px;
+  text-align: center;
+
+}
+thead{
+  font-size: 24px;
+ 
+}
+.table-inbox{
+  font-size: 20px;
+}
+#compose-button{
+margin-right: 30px;
+align-items: right;
+position: sticky;
+}
