@@ -1,32 +1,93 @@
-body{overflow-x:hidden;
-    min-width:300px;
-    height:300px}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@900&display=swap');
 
-h1{
-    text-align: center;
+body {
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center;
+  background: linear-gradient(to right, #12c2e9, #4ff6b6);
 }
 
 
-  
-  .center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-  button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
 
-  p,textarea{
-      font-size:20px;
-  }
+.wrapper {
+  position: relative;
+}
+
+
+.form {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  /* display: grid; */
+  place-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 26px 42px rgba(0, 0, 0, 0.1);
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,h3 {
+  font-family: 'Arial';
+  color:black;
+  letter-spacing: 2px;
+  margin-top: 0;
+}
+.text{
+  color:gray;
+  text-align: center;
+  padding-top: 2px;
+}
+textarea{
+  border-radius: 12px;
+  color:gray;
+  text-align: center;
+  align-items: center;
+
+}
+
+input, button {
+  font-size: 16px;
+  display: block;
+  box-sizing: border-box;
+  width: 25%;
+  margin: 20px auto;
+  padding: 12px 20px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 13px 21px rgba(0, 0, 0, 0.05);
+  top:-20px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: white;
+}
+
+button {
+  cursor: pointer;
+  background: #f64f59;
+  color: white;
+  transition: 0.5s;
+}
+
+button:hover {
+  background: #12c2e9;
+}
+
+
+a {
+  color:black;
+  text-decoration: none;
+  font-size: 16px;
+}
