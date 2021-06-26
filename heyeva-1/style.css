@@ -1,0 +1,83 @@
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+header
+{
+  text-align: center;
+  font-size: 48px;
+  background: #CAF7DB;
+  text-decoration-color: black;
+}
+.top{
+  text-align: center;
+  background: #CAF7DB;
+  font-size: 20px;
+}
+body {
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body nav {
+  position: sticky;
+  top: 0;
+}
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding: 20px;
+  background:honeydew;
+}
+li {
+  list-style: none;
+  margin-right: 650px;
+  font-size: 70px;
+  font-weight: bold;
+}
+li a {
+  text-decoration: none;
+  color: #1ac;
+} 
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color:honeydew;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#44aad4;
+  overflow-x: hidden;
+  padding-top: 55px;
+}
+.sidenav a {
+  padding: 40px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color:white;
+  display: block;
+}
+.sidenav a:hover {
+  color:#150E56;
+  font-size: 27px;
+  
+}
+.sidenav a:active{
+  color: rgb(52, 154, 243);
+}
+.main {
+  margin-left: 160px; 
+  font-size: 28px; 
+  padding: 0px 10px;
+}

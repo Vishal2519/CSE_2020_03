@@ -1,0 +1,14 @@
+	// tablebody = document.getElementsByClassName("ebody"); 
+	for (i = 0; i < tablefrom.length; i++) {
+		// console.log("from");
+   		console.log(tablefrom[i].textContent);
+	 };
+	for (i = 0; i < tablefrom.length; i++) {
+   		// console.log("subject");
+   		console.log(tablesubject[i].textContent);
+   		// tablesubject[i].click();
+	 };
+	 for (i = 0; i < tablefrom.length; i++) {
+   		// console.log("date");
+   		console.log(tabledate[i].textContent);
+	 };

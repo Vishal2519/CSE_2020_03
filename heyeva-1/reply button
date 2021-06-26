@@ -1,0 +1,9 @@
+  <button type="button" class="btn btn-primary reply-button" data-dismiss="modal" data-toggle="modal" data-target="#reply-modal"\
+  onclick="fillInReply(\
+    \''+reply_to+'\', \
+    \''+reply_subject+'\', \
+    \''+getHeader(message.payload.headers, 'Message-ID')+'\'\
+    );"\
+  >Reply</button>\
+
+  //this goes after line 220 / close button
