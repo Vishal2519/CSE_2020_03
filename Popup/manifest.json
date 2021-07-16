@@ -1,0 +1,37 @@
+{
+    "manifest_version": 2,
+    "name": "API",
+    "version": "2",
+    "permissions": [
+        "background",
+        "identity",
+        "notifications",
+        "storage",
+        "alarms",
+        "https://www.googleapis.com/*",
+        "https://*.googleusercontent.com/*"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_popup":"popup.html",
+        "default_title": "Click to Sign in with Google"
+    },
+    "content_scripts":[{
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+
+    }],
+    "oauth2": {
+        "client_id": "985220625322-93j2bd4krcqdgosfnk7087fsv64l6794.apps.googleusercontent.com",
+        "scopes": [
+            "profile",
+            "https://www.googleapis.com/auth/gmail.readonly"
+        ]
+    },
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnqFjzbt+LtejD1JhOyMUbejOHdLoemzryr+ZQHK2CEKuI0yVVYToFs7eNusH/hfxhnyF27G4BU8apsTc695EpVQGD0ANKdt6BjubRnA/4VcdkmfdD3D9nsdCc+fHkINRU5e05grfs/BETWW/JAUULduaNWGfhT7nLRqL6uc/mo45REM1PGuKnSB/f3LX97K0vX/7loX21ih8Ep7aQpcWIPfCwVsb80E4am4CJ6SlBtGD2wxdEW7VInXWMAHMJ1khsi6hJwGx9ZjbnC7UVxjhDWtERK28ylKr8mmuwYUPOhCHfy/uSW/0T9VhiKUQvUokpe1WveeON3kI5nGcM+nVKwIDAQAB"
+}
